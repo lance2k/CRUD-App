@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3"
+        android:padding="@dimen/_10sdp"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Please enter product ID"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/prodId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:hint="Product ID"
+            android:inputType="number"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prodId"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#37474F"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Search Data"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDelete"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="View All Record"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSearch"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Update Record"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUpdate"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Delete Record"
+            android:textSize="@dimen/_20sdp" />
+
+
+    </RelativeLayout>
+</ScrollView>
